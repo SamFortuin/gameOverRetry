@@ -11,13 +11,18 @@ def print_slow(str):
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.1)
+        time.sleep(0.05)
 # Variable 
 nintendoSwitch = False
 comicBook = False
 condom = False
 girl1 = False
 classMate = False
+snickers = False
+crackers = False
+goClass = False
+leaveClass = False
+clearScreen(1)
 
 print(" \
                                                  ******       ****** \n \
@@ -144,41 +149,44 @@ if girl1 == True:
     print_slow("The girl says: Hey I see that you have a Nintendo Switch I would love if I could play with it.\n")
     print_slow("You and the girl play together with the switch.\n")
     print(" \
-    ______           _ _               __     ____  ___  \n \
-   |  ____|         | (_)             /_ |   / /_ |/ _ \  \n \
-   | |__   _ __   __| |_ _ __   __ _   | |  / / | | | | | \n \
-   |  __| | '_ \ / _` | | '_ \ / _` |  | | / /  | | | | | \n \
-   | |____| | | | (_| | | | | | (_| |  | |/ /   | | |_| | \n \
-   |______|_| |_|\__,_|_|_| |_|\__, |  |_/_/    |_|\___/  \n \
-                                __/ |                     \n \
-                               |___/                     ")
+       ______           _ _               __     ________ \n \
+      |  ____|         | (_)             /_ |   / /____  |\n \
+      | |__   _ __   __| |_ _ __   __ _   | |  / /    / / \n \
+      |  __| | '_ \ / _` | | '_ \ / _` |  | | / /    / /  \n \
+      | |____| | | | (_| | | | | | (_| |  | |/ /    / /   \n \
+      |______|_| |_|\__,_|_|_| |_|\__, |  |_/_/    /_/    \n \
+                                    _/ |                 \n \
+                                  |___/                   ")
+    exit()
   elif comicBook == True:
     print_slow("The girl says: Hey i see that you have a Comic Book can i take a look at it?\n")
     print_slow("She takes a look in the comic and finds out its about Spiderman.\n")
     print_slow("You and the girl sit with eachother and read the comic together\n")
     print(" \
-     ______           _ _               ___      ____  ___  \n \
-    |  ____|         | (_)             |__ \    / /_ |/ _ \ \n \
-    | |__   _ __   __| |_ _ __   __ _     ) |  / / | | | | |\n \
-    |  __| | '_ \ / _` | | '_ \ / _` |   / /  / /  | | | | |\n \
-    | |____| | | | (_| | | | | | (_| |  / /_ / /   | | |_| |\n \
-    |______|_| |_|\__,_|_|_| |_|\__, | |____/_/    |_|\___/ \n \
-                                 __/ |                      \n \
-                                |___/                       ")
+       ______           _ _               ___      ________ \n \
+      |  ____|         | (_)             |__ \    / /____  | \n \
+      | |__   _ __   __| |_ _ __   __ _     ) |  / /    / / \n \
+      |  __| | '_ \ / _` | | '_ \ / _` |   / /  / /    / /  \n \
+      | |____| | | | (_| | | | | | (_| |  / /_ / /    / /   \n \
+      |______|_| |_|\__,_|_|_| |_|\__, | |____/_/    /_/    \n \
+                                   __/ |                    \n \
+                                  |___/                     ")
+    exit()
   else:
     print_slow("She sees the Condoms.\n")
     print_slow("The girl says: Eww disgusting.\n")
     print_slow("Then she runs away\n")
     print_slow("And now you're sad.\n")
     print(" \
-     ______           _ _               ____     ____  ___  \n \
-    |  ____|         | (_)             |___ \   / /_ |/ _ \ \n \
-    | |__   _ __   __| |_ _ __   __ _    __) | / / | | | | |\n \
-    |  __| | '_ \ / _` | | '_ \ / _` |  |__ < / /  | | | | |\n \
-    | |____| | | | (_| | | | | | (_| |  ___) / /   | | |_| |\n \
-    |______|_| |_|\__,_|_|_| |_|\__, | |____/_/    |_|\___/ \n \
-                                 __/ |                      \n \
-                                |___/                       ")
+         ______           _ _               ____     ________ \n \
+        |  ____|         | (_)             |___ \   / /____  |\n \
+        | |__   _ __   __| |_ _ __   __ _    __) | / /    / / \n \
+        |  __| | '_ \ / _` | | '_ \ / _` |  |__ < / /    / /  \n \
+        | |____| | | | (_| | | | | | (_| |  ___) / /    / /   \n \
+        |______|_| |_|\__,_|_|_| |_|\__, | |____/_/    /_/    \n \
+                                     __/ |                    \n \
+                                    |___/                    ")
+    exit()
 else:
   print_slow("You leave class alone and head to the cafetaria.\n")
   print_slow("You see some class mates.\n")
@@ -200,33 +208,101 @@ if classMate == "yes":
     print_slow("You tell her that you already have a girlfriend.\n")
     print_slow("the girl becomes confused and walks away.\n")
     print(" \
-     ______           _ _               _  _     ____  ___  \n \
-    |  ____|         | (_)             | || |   / /_ |/ _ \  \n \
-    |  |__  _ __   __| |_ _ __   __ _  | || |_ / / | | | | | \n \
-    |  __| | '_ \ / _` | | '_ \ / _` | |__   _/ /  | | | | | \n \
-    | |____| | | | (_| | | | | | (_| |    | |/ /   | | |_| | \n \
-    |______|_| |_|\__,_|_|_| |_|\__, |    |_/_/    |_|\___/  \n \
-                                __/ |                     \n \
-                               |___/                       ")
+       ______           _ _               _  _     ________ \n \
+      |  ____|         | (_)             | || |   / /____  | \n \
+      | |__   _ __   __| |_ _ __   __ _  | || |_ / /    / /  \n \
+      |  __| | '_ \ / _` | | '_ \ / _` | |__   _/ /    / /  \n \
+      | |____| | | | (_| | | | | | (_| |    | |/ /    / /   \n \
+      |______|_| |_|\__,_|_|_| |_|\__, |    |_/_/    /_/    \n \
+                                   __/ |                    \n \
+                                  |___/                    ")
+    exit()
   else:
     print_slow("You decide to tell her the truth\n")
     print_slow("You tell her that you're to nervous to talk with girls.\n")
     print_slow("then you start running away in fear.\n")
     print(" \
-       ______           _ _               _____    ____  ___  \n \
-      |  ____|         | (_)             | ____|  / /_ |/ _ \ \n \
-      | |__   _ __   __| |_ _ __   __ _  | |__   / / | | | | |\n \
-      |  __| | '_ \ / _` | | '_ \ / _` | |___ \ / /  | | | | |\n \
-      | |____| | | | (_| | | | | | (_| |  ___) / /   | | |_| |\n \
-      |______|_| |_|\__,_|_|_| |_|\__, | |____/_/    |_|\___/ \n \
-                                  __/ |                      \n \
-                                 |___/                       ")
+       ______           _ _               _____    ________ \n \
+      |  ____|         | (_)             | ____|  / /____  | \n \
+      | |__   _ __   __| |_ _ __   __ _  | |__   / /    / /  \n \
+      |  __| | '_ \ / _` | | '_ \ / _` | |___ \ / /    / /   \n \
+      | |____| | | | (_| | | | | | (_| |  ___) / /    / /    \n \
+      |______|_| |_|\__,_|_|_| |_|\__, | |____/_/    /_/    \n \
+                                   __/ |                    \n \
+                                  |___/                     ")
+    exit()                            
 else:
   print_slow("You decide to sit alone.\n")
   print_slow("you pull out your lunch pack\n")
-  print_slow("You pull out a Snicker bar and a Crackers\n")
+  print_slow("You pull out a Snicker bar and some Crackers\n")
   print_slow("Which one do you take first?\n")
-  print_slow("• Snicker")
-  print_slow("• Cracker")
+  print_slow("• Snickers\n")
+  print_slow("• Crackers\n")
   lunch = input("What do you choose?\n")
+  lunch = lunch.lower()
   
+  if lunch == "snickers":
+    print_slow("You ate the Snickers first.\n")
+    snickers = True
+  elif lunch == "crackers":
+    print_slow("You ate the Crackers first.\n")
+    crackers = True
+  else:
+    print_slow("You decided not to eat anything.\n")
+    print_slow("You died of hunger\n")
+    print(" \
+       ______           _ _                 __     ________ \n \
+      |  ____|         | (_)               / /    / /____  | \n \
+      | |__   _ __   __| |_ _ __   __ _   / /_   / /    / / \n \
+      |  __| | '_ \ / _` | | '_ \ / _` | | '_ \ / /    / /  \n \
+      | |____| | | | (_| | | | | | (_| | | (_) / /    / /   \n \
+      |______|_| |_|\__,_|_|_| |_|\__, |  \___/_/    /_/    \n \
+                                   __/ |                    \n \
+                                  |___/                      ")
+    exit()
+clearScreen(2)
+
+print_slow("You leave the cafateria.\n")
+print_slow("You see that you have another class.\n")
+print_slow("Do you skip class or go to class?\n")
+print_slow("• Go to class\n")
+print_slow("• Skip class\n")
+skipClass = input("What do you do?\n")
+skipClass = skipClass.lower()
+
+if skipClass == "go to class":
+  goClass = True
+  print_slow("You decide to go to class.\n")
+else:
+  leaveClass = True
+  print_slow("You decide to leave the class.\n") 
+clearScreen(2)
+
+if goClass == True:
+  print_slow("You decide to go to class.\n")
+  print_slow("You enter the class.\n")
+  print_slow("You see your teacher Bouwman come close to you.\n")
+  print_slow("he says: Meet me after class ;)\n")
+  print(" \
+    _______ _            _______                ______           _ _             \n \
+   |__   __| |          |__   __|              |  ____|         | (_)            \n \
+      | |  | |__   ___     | |_ __ _   _  ___  | |__   _ __   __| |_ _ __   __ _ \n \
+      | |  | '_ \ / _ \    | | '__| | | |/ _ \ |  __| | '_ \ / _` | | '_ \ / _` |\n \
+      | |  | | | |  __/    | | |  | |_| |  __/ | |____| | | | (_| | | | | | (_| |\n \
+      |_|  |_| |_|\___|    |_|_|   \__,_|\___| |______|_| |_|\__,_|_|_| |_|\__, |\n \
+                                                                            __/ |\n \
+                                                                           |___/ ")
+  exit()
+else:
+  print_slow("You decide to skip class.\n")
+  print_slow("And you remindend yourself that you will be forever alone.\n")
+  print(" \
+     ______           _ _               ______ ________\n \
+    |  ____|         | (_)             |____  / /____  | \n \
+    | |__   _ __   __| |_ _ __   __ _      / / /    / /  \n \
+    |  __| | '_ \ / _` | | '_ \ / _` |    / / /    / /  \n \
+    | |____| | | | (_| | | | | | (_| |   / / /    / /   \n \
+    |______|_| |_|\__,_|_|_| |_|\__, |  /_/_/    /_/    \n \
+                                 __/ |                  \n \
+                                |___/                   ")
+exit()
