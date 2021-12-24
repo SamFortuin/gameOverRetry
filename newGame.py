@@ -34,15 +34,16 @@ def endingScreen(num):
                
 # Variable 
 #TODO change true and falses into list/dict
-nintendoSwitch = False
-comicBook = False
-condom = False
-girl1 = False
-classMate = False
-snickers = False
-crackers = False
-goClass = False
-leaveClass = False
+nintendoSwitch, comicBook, condom, girl1, classMate, snickers, crackers, goClass, leaveClass = False
+#old vars
+# comicBook = False
+# condom = False
+# girl1 = False
+# classMate = False
+# snickers = False
+# crackers = False
+# goClass = False
+# leaveClass = False
 
 clearScreen(0)
 print("\
