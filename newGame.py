@@ -34,8 +34,9 @@ def endingScreen(num):
                
 # Variable 
 #TODO change true and falses into list/dict
+#? why tho
 nintendoSwitch, comicBook, condom, girl1, classMate, snickers, crackers, goClass, leaveClass = False
-#old vars
+# old vars
 # comicBook = False
 # condom = False
 # girl1 = False
@@ -152,13 +153,12 @@ clearScreen(2)
 # School segment
 
 if girl1 == True:
-  #TODO turn into single statement
   printSlow("You and the girl walk together to school.\nYou walk into the school and wave goodbye to the girl.")
 else:
   #TODO single statement
   printSlow('You walk to school by yourself.\nYou enter school and head to class\n')
-printSlow("You walk into your class.\n")
-printSlow(" \
+
+printSlow("You walk into your class.\n\
 You enter the class.\n\
 You take a seat and proceed to go further in your class\n")
 clearScreen(2)
@@ -176,10 +176,9 @@ if girl1 == True:
     endingScreen(2)
     exit()
   else:
-    printSlow("She sees the Condoms.\n")
-    printSlow("The girl says: Eww disgusting.\n")
-    printSlow("Then she runs away\n")
-    printSlow("And now you're sad.\n")
+    printSlow('She sees the Condoms.\n\
+    She says: '+'"Eww '+"that's "+'disgusting" and runs away.\n\
+    Now'+" you're sad.")
     endingScreen(3)
     exit()
 else:
