@@ -107,7 +107,6 @@ elif cleanFace == "don":
 #   exit()
 clearScreen(2)
 
-#TODO replace with single printSlow
 printSlow("You start going downstairs.\n\
 You fill your bag with stuff that you need for school.\n\
 What else do you take with you?\n\
