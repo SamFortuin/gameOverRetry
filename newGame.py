@@ -31,11 +31,17 @@ def endingScreen(num):
         |______|_| |_|\__,_|_|_| |_|\__, |{endingLine6[num]}\n\
                                      __/ |\n\
                                     |___/")
+  exit()
+
+def repeatable(var): #!wip
+  printSlow(var)
+
+# tests ending screen printout
+# for i in range(7):
+#   endingScreen(i+1)
                
-# Variable 
-#TODO change true and falses into list/dict
-#? why tho
-nintendoSwitch, comicBook, condom, girl1, classMate, snickers, crackers, goClass, leaveClass = False
+# vars
+nintendoSwitch, comicBook, condom, girl1, classMate, snickers, crackers, goClass, leaveClass = False, False, False, False, False, False, False, False, False
 # old vars
 # comicBook = False
 # condom = False
@@ -155,7 +161,6 @@ clearScreen(2)
 if girl1 == True:
   printSlow("You and the girl walk together to school.\nYou walk into the school and wave goodbye to the girl.")
 else:
-  #TODO single statement
   printSlow('You walk to school by yourself.\nYou enter school and head to class\n')
 
 printSlow("You walk into your class.\n\
@@ -165,71 +170,39 @@ clearScreen(2)
 
 if girl1 == True:
   if nintendoSwitch == True:
-    printSlow("The girl says: Hey I see that you have a Nintendo Switch I would love if I could play with it.\n")
-    printSlow("You and the girl play together with the switch.\n")
+    printSlow("The girl says: Hey I see that you have a Nintendo Switch I would love if I could play with it.\nYou and the girl play together with the switch.\n")
     endingScreen(1)
-    exit()
   elif comicBook == True:
-    printSlow("The girl says: Hey i see that you have a Comic Book can i take a look at it?\n")
-    printSlow("She takes a look in the comic and finds out its about Spiderman.\n")
-    printSlow("You and the girl sit with eachother and read the comic together\n")
+    printSlow("The girl says: Hey i see that you have a Comic Book can i take a look at it?\nShe takes a look in the comic and finds out its about Spiderman.\nYou and the girl sit with eachother and read the comic together\n")
     endingScreen(2)
-    exit()
   else:
-    printSlow('She sees the Condoms.\n\
-    She says: '+'"Eww '+"that's "+'disgusting" and runs away.\n\
-    Now'+" you're sad.")
+    printSlow('She sees the Condoms.\nShe says: '+'"Eww '+"that's "+'disgusting" and runs away.\nNow'+" you're sad.")
     endingScreen(3)
-    exit()
 else:
-  printSlow("You leave class alone and head to the cafetaria.\n")
-  printSlow("You see some class mates.\n")
-  printSlow("Do you sit with them?\n")
-  printSlow("• Yes\n")
-  printSlow("• No\n")
-  classMate = input("What do you do?\n")
-  classMate = classMate.lower()
+  printSlow("You leave class alone and head to the cafetaria.\nYou see some class mates.\nDo you sit with them?\n• Yes\n• No\nWhat do you do?\n")
+  classMate = input("").lower()[:1] #empty cause question is in print slow
 clearScreen(2)
-if classMate == "yes":
-  printSlow("You decide to sit next to your classmates.\n")
-  printSlow("You sit next to the girl you saw in the morning.\n")
-  printSlow("she asked why did you not go with her.\n")
-  printSlow("• Lie\n")
-  printSlow("• Truth\n")
-  girlLie = input("What do you do?\n")
-  girlLie = girlLie.lower()
+if classMate == "y" or classMate == 'j':
+  printSlow("You decide to sit next to your classmates.\nYou sit next to the girl you saw in the morning.\nshe asked why did you not go with her.\n• Lie\n• Truth\nWhat do you do?\n")
+  girlLie = input("").lower()[:3]
   if girlLie == "lie":
-    printSlow("You tell her that you already have a girlfriend.\n")
-    printSlow("the girl becomes confused and walks away.\n")
+    printSlow("You tell her that you already have a girlfriend.\nthe girl becomes confused and walks away.\n")
     endingScreen(4)
-    exit()
   else:
-    printSlow("You decide to tell her the truth\n")
-    printSlow("You tell her that you're to nervous to talk with girls.\n")
-    printSlow("then you start running away in fear.\n")
-    endingScreen(5)
-    exit()                            
+    printSlow("You decide to tell her the truth\nYou tell her that you're to nervous to talk with girls.\nthen you start running away in fear.\n")
+    endingScreen(5)                   
 else:
-  printSlow("You decide to sit alone.\n")
-  printSlow("you pull out your lunch pack\n")
-  printSlow("You pull out a Snicker bar and some Crackers\n")
-  printSlow("Which one do you take first?\n")
-  printSlow("• Snickers\n")
-  printSlow("• Crackers\n")
-  lunch = input("What do you choose?\n")
-  lunch = lunch.lower()
-  
-  if lunch == "snickers":
+  printSlow("You decide to sit alone.\nyou pull out your lunch pack\nYou pull out a Snicker bar and some Crackers\nWhich one do you take first?\n• Snickers\n• Crackers\nWhat do you choose?\n")
+  lunch = input("").lower()[:3]
+  if lunch == "sni":
     printSlow("You ate the Snickers first.\n")
     snickers = True
-  elif lunch == "crackers":
+  elif lunch == "cra":
     printSlow("You ate the Crackers first.\n")
     crackers = True
   else:
-    printSlow("You decided not to eat anything.\n")
-    printSlow("You died of hunger\n")
+    printSlow("You decided not to eat anything.\nYou died of hunger\n")
     endingScreen(6)
-    exit()
 clearScreen(2)
 
 printSlow("You leave the cafateria.\n\
@@ -263,4 +236,3 @@ if goClass == True:
 else:
   printSlow("You decide to skip class.\nAnd you remindend yourself that you will be forever alone.\n")
   endingScreen(7)
-exit()
